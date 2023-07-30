@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Kanit-Regular;
+    src: url(Kanit/Kanit-Regular.ttf);
+}
+
+@font-face {
+    font-family: Kanit-Bold;
+    src: url(Kanit/Kanit-Bold.ttf);
+    font-weight: bold;
+}
+
+header{
+    font-family: Kanit-Regular;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    z-index: 10000;
+    justify-content: space-between;
+}
+
+header h1{
+    color: white;
+    padding-left: 50px;
+    margin: 0px;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+nav{
+    padding-right: 50px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1em;
+    padding: 6px 15px; 
+    color:white;
+    border-radius: 10px;
+    transition: 1.0s;
+}
+
+nav ul li a:hover, nav ul li a.current{
+    color: black;
+    background-color: lightblue;
+}

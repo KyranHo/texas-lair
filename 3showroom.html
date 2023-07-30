@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="3showroom.css">
+    <title>テキサスさん's Lair - Showroom</title>
+</head>
+<body>
+    <header>
+        <h1>テキサスさん's Lair</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"">Home</a></li>
+                <li><a href="2shop.html">Shop</a></li>
+                <li><a href="#" class="current">Showroom</a></li>
+                <li><a href="4request.html">Requests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="paste">
+            <p>This is a showroom of the cars I owned and/or made in-game. </p>
+            <a href="#pics">View</a>
+        </div>
+    </div>
+
+    <div id="pics">
+        <div id="row">
+            <div id="column">
+                <img src="images/showroom/img1.PNG">
+            </div>
+            <div id="column">
+                <h2>Seven's Day Rotary Meet</h2>
+                <p>Featuring the GReddy 9, GReddy 7, GReddy Final 7, Re Amemiya Maoh and a AD Facer fitted RX-7. </p>
+                <a href="seven.html">Click here for more</a>
+            </div>
+        </div>
+
+        <div id="row">
+            <div id="column2">
+                <h2>S15</h2>
+                <p>A silver S15 fitted with a 326 Power body kit and having a light blue on the top. </p>
+            </div>
+            <div id="column2">
+                <img src="images/showroom/img2.PNG">
+            </div>
+        </div>
+
+        <div id="row">
+            <div id="column">
+                <img src="images/showroom/img3.PNG">
+            </div>
+            <div id="column">
+                <h2>BASSAS Sony E30</h2>
+                <p>Raced in the 1994 Spanish Grand Touring Championship</p>
+            </div>
+        </div>
+
+        <div id="row">
+            <div id="column2">
+                <h2>Sileighty</h2>
+                <p>A Sileighty fitted with a BN Sports bodykit and chromaflair paintjob, completed with an itasha of the character, USS Essex from Azur Lane. </p>
+            </div>
+            <div id="column2">
+                <img src="images/showroom/img4.PNG">
+            </div>
+        </div>
+
+        <div id="row">
+            <div id="column">
+                <img src="images/showroom/img5.PNG">
+            </div>
+            <div id="column">
+                <h2>Toyota Mark II</h2>
+                <p>Toyota Mark II drifting on Nikko Circuit. </p>
+            </div>
+        </div>
+
+        <div id="row">
+            <div id="column2">
+                <h2>Abflug Arde</h2>
+                <p>A RX-7 FD3S, originally kitted with an Abflug kit and nicknamed the Pink Spider. It was later modified further to become the Abflug Arde. </p>
+            </div>
+            <div id="column2">
+                <img src="images/showroom/img6.PNG">
+            </div>
+        </div>
+
+        <div id="row">
+            <div id="column">
+                <img src="images/showroom/img7.PNG">
+                <img src="images/showroom/img8.PNG">
+            </div>
+            <div id="column">
+                <h2>DMEC Spec S15</h2>
+                <p>A S15 with specifications for DriftMasters European Championship, finished with a N-Style livery. </p>
+            </div>
+        </div> 
+    </div>
+
+    <footer>
+        <p>
+            <a href="numberguess.html" id="num" target="_blank">Over here</a>
+            Discord: <span onclick="copy(this)">spectr3_2781</span>
+            Instagram: <a href="https://www.instagram.com/texaswaifu/" id="ig" target="_blank">@texaswaifu</a>
+            <a href="card.html" id="card" target="_blank" >Click me</a>
+        </p>
+        <script>
+            function copy(that) {
+                var temp = document.createElement('input')
+                document.body.appendChild(temp)
+                temp.value = that.textContent
+                temp.select()
+                document.execCommand('copy',false)
+                temp.remove()
+                alert("Discord tag copied to clipboard! :D")
+            }
+        </script>
+    </footer>
+</body>
+</html>

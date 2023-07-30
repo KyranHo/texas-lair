@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guess</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="numberguess.css">
+    <script src="number.js" type="text/JavaScript">
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Number guessing game :D</h1>
+        <p>You found 1 of 2 hidden games :D</p>
+        <p>Attempts: <span id="count"></span></p>
+        <p>Highest Score: <span id="highest"></span></p>
+        <input type="button" onclick="guessNum()" value="Start">
+    </div>
+
+    <footer>
+        <p>
+            Discord: <span onclick="copy(this)">spectr3_2781</span>
+            Instagram: <a href="https://www.instagram.com/texaswaifu/" id="ig" target="_blank">@texaswaifu</a>
+        </p>
+        <script>
+            function copy(that) {
+                var temp = document.createElement('input')
+                document.body.appendChild(temp)
+                temp.value = that.textContent
+                temp.select()
+                document.execCommand('copy',false)
+                temp.remove()
+                alert("Discord tag copied to clipboard! :D")
+            }
+        </script>
+    </footer>
+</body>
+</html>

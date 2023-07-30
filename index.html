@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="1home.css">
+    <title>テキサスさん's Lair - Home</title>
+</head>
+<body>
+    <header>
+        <h1>テキサスさん's Lair</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="2shop.html">Shop</a></li>
+                <li><a href="3showroom.html">Showroom</a></li>
+                <li><a href="4request.html">Requests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="welc">
+            <p>Welcome to the Lair, where I features my works in FRL as well as the codes I publish publicly.</p>
+            <a href="#intro">Explore</a>
+        </div>
+    </div>
+
+    <div id="intro">
+        <h2>What is FR Legends?</h2>
+        <p>FR Legends is all about drifting! From driving legendary FR (front-engine, rear-wheel-drive) drift cars at world's most iconic circuits, to customizing everything on your car including engine swaps and wide-body kits.</p>
+        <p>For the first time ever, a mobile that lets you have tandem drift battles with AI drivers, unique scoring systems based on real world competition judging rules.</p>
+        <p>Below is a promotional video of the game during launch. All credits goes to the uploader and the creators of the game. </p>
+        <p><iframe src="https://www.youtube.com/embed/DkfC2jdjLYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+    </div>
+    <br>
+    <div class="cars">
+        <p>Below is a list of cars available in this game: </p>
+        <table border="1">
+            <tr>
+                <th>Car model</th><th>Engine</th><th>Max horsepower</th>
+            </tr>
+            <tr>
+                <td>Nissan Silvia S13</td><td>C18</td><td>582</td>
+            </tr>
+            <tr>
+                <td>Toyota GT86</td><td>F20</td><td>615</td>
+            </tr>
+            <tr>
+                <td>Toyota Altezza</td><td>3G</td><td>611</td>
+            </tr>
+            <tr>
+                <td>BMW E30</td><td>SA14</td><td>611</td>
+            </tr>
+            <tr>
+                <td>Toyota AE86</td><td>4A-GE</td><td>615</td>
+            </tr>
+            <tr>
+                <td>Toyota Mark II</td><td>1J</td><td>717</td>
+            </tr>
+            <tr>
+                <td>Toyota Chaser JZX100</td><td>1J</td><td>717</td>
+            </tr>
+            <tr>
+                <td>Mazda RX-7 FC3S Hardtop</td><td>Wankel</td><td>617</td>
+            </tr>
+            <tr>
+                <td>Mazda RX-7 FC3S Softtop</td><td>Wankel</td><td>617</td>
+            </tr>
+            <tr>
+                <td>Nissan Silvia S14 Zenki</td><td>S20R</td><td>617</td>
+            </tr>
+            <tr>
+                <td>Nissan Silvia S14 Kouki</td><td>S20R</td><td>617</td>
+            </tr>
+            <tr>
+                <td>Nissan 180SX</td><td>CA18</td><td>582</td>
+            </tr>
+            <tr>
+                <td>Nissan Skyline R32 GTS-T</td><td>RB25</td><td>644</td>
+            </tr>
+            <tr>
+                <td>Nissan Skyline ER32</td><td>RB25</td><td>644</td>
+            </tr>
+            <tr>
+                <td>Nissan Silvia S15</td><td>S20B</td><td>644</td>
+            </tr>
+            <tr>
+                <td>Mazda Miata MX-5 NA</td><td>BP</td><td>516</td>
+            </tr>
+            <tr>
+                <td>Mazda RX-7 FD3S</td><td>Wankel</td><td>715</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <p>You may find easter eggs within my website, see if you can find them. ;) </p>
+    </div>
+
+    <footer>
+        <p>
+            <a href="numberguess.html" id="num" target="_blank">Over here</a>
+            Discord: <span onclick="copy(this)">spectr3_2781</span>
+            Instagram: <a href="https://www.instagram.com/texaswaifu/" id="ig" target="_blank">@texaswaifu</a>
+            <a href="card.html" id="card" target="_blank" >Click me</a>
+        </p>
+        <script>
+            function copy(that) {
+                var temp = document.createElement('input')
+                document.body.appendChild(temp)
+                temp.value = that.textContent
+                temp.select()
+                document.execCommand('copy',false)
+                temp.remove()
+                alert("Discord tag copied to clipboard! :D")
+            }
+        </script>
+    </footer>
+</body>
+</html>

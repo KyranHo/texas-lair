@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="formprocessor.css">
+    <title>Submitted!</title>
+</head>
+<body>
+    <header>
+        <h1>テキサスさん's Lair</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"">Home</a></li>
+                <li><a href="2shop.html">Shop</a></li>
+                <li><a href="3showroom.html">Showroom</a></li>
+                <li><a href="#" class="current">Requests</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bg">
+        <div id="yay">
+            <p>Form Submitted! </p>
+        </div>
+    </div>
+
+    <div id="text">
+        <h2>Form results</h2>
+        <p>You entered:</p>
+        <p>Email: <span id="mailout"></span></p>
+        <p>Item requested: <span id="itemout"></span></p>
+        <p>Additional note: <span id="noteout"></span></p>
+    </div>
+    <script src="formoutput.js">
+    </script>
+
+<footer>
+    <p>
+        Discord: <span onclick="copy(this)">spectr3_2781</span>
+        Instagram: <a href="https://www.instagram.com/texaswaifu/" id="ig" target="_blank">@texaswaifu</a>
+    </p>
+    <script>
+        function copy(that) {
+            var temp = document.createElement('input')
+            document.body.appendChild(temp)
+            temp.value = that.textContent
+            temp.select()
+            document.execCommand('copy',false)
+            temp.remove()
+            alert("Discord tag copied to clipboard! :D")
+        }
+    </script>
+</footer>
+</body>
+</html>

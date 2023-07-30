@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="4request.css">
+    <title>テキサスさん's Lair - Request</title>
+</head>
+<body>
+    <header>
+        <h1>テキサスさん's Lair</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"">Home</a></li>
+                <li><a href="2shop.html">Shop</a></li>
+                <li><a href="3showroom.html">Showroom</a></li>
+                <li><a href="#" class="current">Requests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="text">
+            <p>Form request</p>
+            <a href="#instruct">View</a>
+        </div>
+    </div>
+    <div id="instruct">
+        <p>Below is a form, where you may request help in making liveries, etc. Please be patient as I may not be able to produce works quickly. </p>
+    </div>
+    <div class="form">
+        <form method="get" action="formprocessor.html" target="_blank" id="form">
+            <fieldset id="info">
+                <legend>Request</legend>
+                <br>
+                <label>
+                    Email: <input type="text" id="mail" placeholder="example@mail.com" required >
+                    <div>
+                        <p><span id="error"></span></p>
+                    </div>
+                </label>
+                <label>
+                    Your request: <br>
+                    <label>
+                        <input type="radio" id="parts" value="parts" name="request" required onclick="removeRequired()"> Parts
+                    </label><br>
+                    <label>
+                        <input type="radio" id="kits" value="kits" name="request" onclick="removeRequired()"> Body kits
+                    </label><br>
+                    <label >
+                        <input type="radio" id="conv" value="conversion" name="request" onclick="removeRequired()"> Conversions
+                    </label><br>
+                    <label>
+                        <input type="radio" id="others" value="others" name="request" onclick="setRequired()"> Others: <input type="text" id="inputother" onchange="changeradio()">
+                    </label>
+                </label><br>
+                <label><br>
+                    Details: <br>
+                    <textarea id="note" placeholder="Do include pastebin link to existing code if any. " required></textarea>
+                </label><br>
+                <br>
+                <input type="submit" onclick="check(); passValues();"></input>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <p>
+            <a href="numberguess.html" id="num" target="_blank">Over here</a>
+            Discord: <span onclick="copy(this)">spectr3_2781</span>
+            Instagram: <a href="https://www.instagram.com/texaswaifu/" id="ig" target="_blank">@texaswaifu</a>
+            <a href="card.html" id="card" target="_blank" >Click me</a>
+        </p>
+        <script>
+            function copy(that) {
+                var temp = document.createElement('input')
+                document.body.appendChild(temp)
+                temp.value = that.textContent
+                temp.select()
+                document.execCommand('copy',false)
+                temp.remove()
+                alert("Discord tag copied to clipboard! :D")
+            }
+        </script>
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>

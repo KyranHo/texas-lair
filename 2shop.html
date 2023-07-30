@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="2shop.css">
+    <title>テキサスさん's Lair - Shop</title>
+</head>
+<body>
+    <header>
+        <h1>テキサスさん's Lair</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="current">Shop</a></li>
+                <li><a href="3showroom.html">Showroom</a></li>
+                <li><a href="4request.html">Requests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="paste">
+            <p>Here, you may access the codes that I publish publicly.</p>
+            <a href="#links">Pastebins :D</a>
+        </div>
+    </div>
+
+    <div id="links">
+        <h1>Pastebin</h1>
+        <div id="row">
+            <div id="column">
+                <a href="https://pastebin.com/fGWDE285" target="_blank"><img src="images/shop/rotary_w.png" id="rotaryw"></a>
+                <h2>Re Amemiya Rotary (White)</h2>
+            </div>
+            <div id="column">
+                <a href="https://pastebin.com/EpcqeBQi" target="_blank"><img src="images/shop/rotary_b.jpg" id="rotaryb"></a>
+                <h2>Re Amemiya Rotary (Black)</h2>
+            </div>
+            <div id="column">
+                <a href="https://pastebin.com/vUd8nDAP" target="_blank"><img src="images/shop/rotary.png" id="rotary"></a>
+                <h2>Rotary</h2>
+            </div>
+        </div>
+        <div id="row">
+            <div id="column">
+                <a href="https://pastebin.com/mN3dEaZA"  target="_blank"><img src="images/shop/attack.jpg.sb-ade08947-dEq3Hz" id="attack"></a>
+                <h2>Attack Maximum Challenge</h2>
+            </div>
+            <div id="column">
+                <a href="https://pastebin.com/vKsAGSBT" target="_blank"><img src="images/shop/attack_slap.jpg" id="attack_s"></a>
+                <h2>Attack Maximum Slap</h2>
+            </div>
+            <div id="column">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="final">
+        <h1>Final things to note when using: </h1>
+        <ol>
+            <li>Do credit me when able.</li>
+            <li>No secondary redistribution.</li>
+            <li>No grafitti.</li>
+            <br>
+            <li>Enjoy :)</li>
+        </ol>
+        <br>
+    </div>
+
+    <footer>
+        <p>
+            <a href="numberguess.html" id="num" target="_blank">Over here</a>
+            Discord: <span onclick="copy(this)">spectr3_2781</span>
+            Instagram: <a href="https://www.instagram.com/texaswaifu/" id="ig" target="_blank">@texaswaifu</a>
+            <a href="card.html" id="card" target="_blank" >Click me</a>
+        </p>
+        <script>
+            function copy(that) {
+                var temp = document.createElement('input')
+                document.body.appendChild(temp)
+                temp.value = that.textContent
+                temp.select()
+                document.execCommand('copy',false)
+                temp.remove()
+                alert("Discord tag copied to clipboard! :D")
+            }
+        </script>
+    </footer>
+</body>
+</html>
